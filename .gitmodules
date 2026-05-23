@@ -1,0 +1,3 @@
+[submodule "ForzaTech-extraction-tools"]
+	path = ForzaTech-extraction-tools
+	url = https://github.com/Doliman100/ForzaTech-extraction-tools.git
