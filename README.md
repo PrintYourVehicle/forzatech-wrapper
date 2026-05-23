@@ -1,6 +1,6 @@
 # ForzaTech Wrapper
 
-A TUI (Terminal User Interface) wrapper around [ForzaTech-extraction-tools](https://github.com/user/ForzaTech-extraction-tools) for batch-converting Forza Horizon 6 car models to Blender `.blend` files.
+A TUI (Terminal User Interface) wrapper around [ForzaTech-extraction-tools](https://github.com/Doliman100/ForzaTech-extraction-tools) for batch-converting FH6 car models to Blender `.blend` files.
 
 ![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue)
 
@@ -19,6 +19,20 @@ A TUI (Terminal User Interface) wrapper around [ForzaTech-extraction-tools](http
 - [uv](https://docs.astral.sh/uv/) (package manager)
 - [Blender 4.1+](https://www.blender.org/download/) (tested with 5.1.1)
 - Forza Horizon 6 game files (specifically `media\Cars\*.zip`)
+
+## TUI Interface
+<img width="1919" height="1010" alt="image" src="https://github.com/user-attachments/assets/cb9e468e-3306-44a2-8c91-4111ca44696f" />
+
+
+## Outputs
+
+|   |   |
+|---|---|
+| <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/b52982b3-f51c-43ed-b50e-e69e354c9432" /> | <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/99ad7a9c-aff0-46b1-a382-829c70be8a01" /> |
+| <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/e14f1161-d8b6-4e47-a514-d89f68fe22b0" /> | <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/e652d161-7171-418d-9591-5743c0c149a9" /> |
+| <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/c361a976-2da9-446d-844f-1a93e0fd29c2" /> | <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/6b25369f-eb32-4a0f-bb4e-6505a58b0af7" />  |
+
+> If you're wondering why these have only body panels, it's because we only need them for 3D printing — not the windows, engine, etc. This repo is specifically for PrintYourVehicle and might not be useful for other cases. It also contains heavily AI-generated code, so be cautious about touching it lol.
 
 ## Setup
 
