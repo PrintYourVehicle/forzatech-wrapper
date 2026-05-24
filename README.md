@@ -38,7 +38,7 @@ A TUI (Terminal User Interface) wrapper around [ForzaTech-extraction-tools](http
 
 1. Clone with submodules:
    ```bash
-   git clone --recurse-submodules https://github.com/user/forzatech-wrapper.git
+   git clone --recurse-submodules https://github.com/PrintYourVehicle/forzatech-wrapper.git
    cd forzatech-wrapper
    ```
 
