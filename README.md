@@ -28,7 +28,8 @@ A TUI (Terminal User Interface) wrapper around [ForzaTech-extraction-tools](http
 - Forza Horizon 6 game files (specifically `media\Cars\*.zip`)
 
 ## TUI Interface
-<img width="1919" height="1010" alt="image" src="https://github.com/user-attachments/assets/cb9e468e-3306-44a2-8c91-4111ca44696f" />
+<img width="1918" height="1009" alt="TUI image" src="https://github.com/user-attachments/assets/4a858c4a-ddea-4170-a818-41f236958c9a" />
+
 
 
 ## Outputs
