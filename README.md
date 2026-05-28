@@ -6,10 +6,17 @@ A TUI (Terminal User Interface) wrapper around [ForzaTech-extraction-tools](http
 
 ## Features
 
-- **Interactive car selection** — browse and select from all available car zips
+- **Interactive car selection** — browse and search from all available car zips
+- **Search/filter** — quickly find cars by name with real-time filtering
 - **Full export** — imports the complete car model (body, engine, interior, wheels, brakes)
 - **Body-only export** — imports only exterior body panels (bumpers, fenders, doors, hood, wing, lights) — ideal for 3D printing
+- **Interior-only export** — imports only interior components (dash, seats, console)
+- **OBJ export** — exports car models as `.obj` files for use in other 3D software
+- **Extract Bundle** — exports all modes (full, body, interior) into a folder per car
+- **Extract Bundle Zip** — same as above but packaged as a `.zip` per car
 - **Batch processing** — convert multiple cars in one go
+- **Parallel conversion** — runs multiple Blender instances concurrently for maximum throughput
+- **Automatic cleanup** — extracted media files are removed after conversion to save disk space
 - **Automatic zip extraction** — handles the game's zip-packed car format
 - **No GameDB required** — works without the decrypted database file (`use_db = False`)
 
@@ -55,6 +62,7 @@ A TUI (Terminal User Interface) wrapper around [ForzaTech-extraction-tools](http
    ```env
    FORZA_PATH=D:\games\Forza Horizon 6
    BLENDER_PATH=D:\path\to\blender.exe
+   MAX_WORKERS=4
    ```
 
 ## Usage
@@ -75,13 +83,21 @@ uv run python main.py
 
 - **Convert (Full)** — full model with all parts
 - **Convert (Body Only)** — exterior panels only (no engine, interior, wheels, windows)
+- **Convert (Interior Only)** — interior components only (dash, seats, console)
+- **Export OBJ** — full model exported as `.obj` + `.mtl`
+- **Extract Bundle** — exports all modes (full, body, interior) into a folder per car
+- **Extract Bundle Zip** — same as above but packaged as a `.zip` per car
 - **Save Log** — saves conversion log to `workspace/log.txt`
 
 ### Output
 
-Converted `.blend` files are saved to the `workspace/` directory:
+Converted files are saved to the `workspace/` directory:
 - Full: `workspace/<car_name>.blend`
 - Body only: `workspace/<car_name>_body.blend`
+- Interior only: `workspace/<car_name>_interior.blend`
+- OBJ: `workspace/<car_name>.obj` + `workspace/<car_name>.mtl`
+- Bundle: `workspace/<car_name>/` (folder with all .blend variants)
+- Bundle Zip: `workspace/<car_name>.zip`
 
 ## How it works
 
